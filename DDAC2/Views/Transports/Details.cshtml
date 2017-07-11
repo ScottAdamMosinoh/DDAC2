@@ -1,0 +1,74 @@
+﻿@model DDAC2.Models.Transport
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Transport</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Container.ContainerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Container.ContainerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ship.ShipName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ship.ShipName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shipyard.ShipYardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shipyard.ShipYardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shipyard2.ShipYardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shipyard2.ShipYardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArrivalTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArrivalTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartureTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartureTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TransportID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
